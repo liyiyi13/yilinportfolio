@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/5s.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Y.LI</h1>
+        <nav>
+            <a href="../html/index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="case">
+            <div class="case-info">
+                <a href="index.html" class="back-to-work">← Back to Works</a>
+                <h1>ScrollStop: Discouraging Doomscrolling</h1>
+                <h3>A prototype that introduces doomscroll
+                    interventions to help users become more aware of their digital consumption habits.</h3>
+                <h4>UI Designer · UX Researcher</h4>
+                <h4>Skills: User Research, User Testing, Figma, UI Design</h4>
+            </div>
+            <img class="case-info-img" src="../images/leaf.png" alt="mockup">
+        </div>
+
+        <hr>
+
+        <h1 class="section-heading">Problem Statement</h1>
+        <p class="paragraph">People often lose track of how long they spend doomscrolling, especially on apps designed
+            to keep them engaged. Because this behavior is subconscious, users lack the autonomy to stop themselves—even
+            when they recognize the negative effects on mood, focus, and productivity. Existing screen-time tools are
+            easy to bypass or ignore, leading to ineffective self-regulation. Our goal is to give users intentional,
+            interruption-based moments that break the automatic cycle of endless scrolling.
+        </p>
+        <hr>
+        <h1 class="section-heading">Research</h1>
+        <p class="paragraph">In order to create an app that effectively intervenes with the doomscroll phenomonon, we
+            decided to gather insights as to why doomscroll is such an issue.</p>
+        <h2 class="subheading">Primary Research</h2>
+        <p class="paragraph">For our primary research, we interviewed 3 participants about doomscrolling. Our
+            participants were between the ages of 18-21 and often scroll through their phones. </p>
+        <h2 class="sub-sub-heading">Questions</h2>
+        <div class="interview">
+            <div class="interview-box">
+                <h2>Define doomscrolling.</h2>
+                <p>" When you are glued to the phone, stuck on social media in a loop of consuming content for
+                    hours at a time." - Participant 1
+                </p>
+                <p> "Endless scrolling." - Participant 2
+                </p>
+                <p>"Unproductive scrolling when I am bored." - Participant 3 </p>
+            </div>
+            <div class="interview-box">
+                <h2>How long do you doomscroll?</h2>
+                <p>"I usually will doomscroll around 1-2 hours a day" - Participant 1</p>
+                <p>"1-2 hours. How long I doomscroll also depends on what I'm doing and if I have a lot to do that day."
+                    - Participant 2</p>
+                <p>"2-3 hours at the end of the day" - Participant 3</p>
+            </div>
+            <div class="interview-box">
+                <h2> What are some things you think encourages your doomscrolling? </h2>
+                <p> "Well Tiktok in specific is perfect for my short attention span because there is something new every
+                    minute. But minutes add up and then I've scrolling for an hour without realizing." - Participant 1
+                </p>
+                <p>"The videos are entertaining and if they’re boring I can just watch a different video since it’s all
+                    so accessible. I think the algorithm just keeps feeding me what I want to see so I keep watching
+                    it." - Participant 2"
+                </p>
+                <p>"It’s just entertainment and a lot of the content I watch distracts me from the monotony of everyday
+                    life." - Participant 3</p>
+            </div>
+        </div>
+        <h2 class="subheading">Secondary Research</h2>
+        <ul class="styled-list">
+            <li class="li-styled">
+                We found that people ages 18-29 use social
+                media the most across platforms like YouTube,
+                Instagram, and TikTok.
+            </li>
+            <li class="li-styled"> Generation Z (1997–2012) also grew up in a
+                digital world without a prior experience of a pre-smartphone era, making them true digital natives</li>
+        </ul>
+        <h2 class="sub-sub-heading">The Doomscroll Cycle </h2>
+        <div class="observation-box">
+            <img class="workspace" src="../images/cycle.png" alt="workspace">
+            <p class="obs-text">Doomscrolling begins with an internal trigger like stress or boredom, leading to an
+                automatic response of opening social media without conscious intent. Users then engage in the behavior
+                of endless scrolling, which provides temporary relief through distraction or dopamine. However, this
+                results in long-term consequences such as increased anxiety, time loss, and emotional fatigue, creating
+                a new trigger that restarts the cycle.
+                <br>
+                <br>
+                Our intervention plans to break this loop by interrupting automatic behavior early and offering
+                intentional
+                alternatives for relief, helping users pause, reflect, and regain control before doomscrolling becomes
+                habitual.
+            </p>
+        </div>
+
+        <hr>
+
+        <h1 class="section-heading">Ideation and Insights</h1>
+
+        <section class="ideation">
+            <p class="paragraph">
+                We explored multiple intervention concepts and evaluated each based on effectiveness,
+                user autonomy, and ability to interrupt subconscious scrolling behavior.
+            </p>
+
+            <div class="idea-flow">
+
+                <!-- Idea 1 -->
+                <article class="idea-row">
+                    <div class="idea-col">
+                        <span class="col-label">Idea</span>
+                        <h3>Time Awareness Popup</h3>
+                        <p>
+                            A popup displays how long a user has been scrolling to increase time awareness.
+                        </p>
+                    </div>
+
+                    <div class="insight-col">
+                        <span class="col-label">Insight</span>
+                        <ul>
+                            <li class="idea-list">Raises awareness but is easy to dismiss.</li>
+                            <li class="idea-list">Too passive for subconscious doomscrolling.</li>
+                        </ul>
+                    </div>
+
+                    <div class="decision-col">
+                        <span class="col-label">Decision</span>
+                        <p>
+                            Awareness alone was not enough; additional friction was needed to interrupt autopilot
+                            behavior.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Idea 2 -->
+                <article class="idea-row">
+                    <div class="idea-col">
+                        <span class="col-label">Idea</span>
+                        <h3>Persistent Reminders</h3>
+                        <p>
+                            Frequent reminders interrupt scrolling by repeatedly surfacing elapsed time.
+                        </p>
+                    </div>
+
+                    <div class="insight-col">
+                        <span class="col-label">Insight</span>
+                        <ul>
+                            <li>Effectively interrupts the scrolling loop.</li>
+                            <li>Can feel punitive and be disabled entirely.</li>
+                        </ul>
+                    </div>
+
+                    <div class="decision-col">
+                        <span class="col-label">Decision</span>
+                        <p>
+                            The concept was retained but redesigned as swipe-away reminders to maintain user autonomy.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Idea 3 -->
+                <article class="idea-row">
+                    <div class="idea-col">
+                        <span class="col-label">Idea</span>
+                        <h3>Scrolling Roadblock (Puzzle)</h3>
+                        <p>
+                            A short puzzle must be completed before the user can continue scrolling.
+                        </p>
+                    </div>
+
+                    <div class="insight-col">
+                        <span class="col-label">Insight</span>
+                        <ul>
+                            <li>Forces active engagement and conscious decision-making.</li>
+                            <li>Breaks the automatic scrolling cycle.</li>
+                        </ul>
+                    </div>
+
+                    <div class="decision-col">
+                        <span class="col-label">Decision</span>
+                        <p>
+                            Integrated as a core intervention method that reintroduces intentionality.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+
+
+        <h1 class="section-heading">Proposed Solution</h1>
+        <div class="scrollstop">
+            <img src="../images/Screenshot 2025-12-30 130457.png" alt="">
+
+        </div>
+        <h1 class="scrollstop-heading">ScrollStop</h1>
+        <p class="paragraph"> a mobile app that integrates with a user’s screen-time data and
+            provides <strong> customizeable, autonomy-driven</strong> interventions when doomscrolling is detected.</p>
+        <h2 class="subheading">Three Intervention Modes</h2>
+        <div class="interview">
+            <div class="interview-box">
+                <h2 class="sub-sub-heading">Notify</h2>
+                <p>The app forces a short
+                    timed break where the
+                    screen locks, encouraging
+                    rest and resetting
+                    dopamine-driven scrolling
+                    patterns</p>
+            </div>
+            <div class="interview-box">
+                <h2 class="sub-sub-heading">Deter</h2>
+                <p>When a user exceeds their
+                    scroll limit, a quick puzzle
+                    must be completed before
+                    continuing. This breaks
+                    the unconscious scrolling
+                    loop and reintroduces
+                    intentionality
+            </div>
+            <div class="interview-box">
+                <h2 class="sub-sub-heading">Break</h2>
+                <p>A flood of small reminders
+                    appears (“You’ve been
+                    scrolling for 22 minutes”).
+                    The user must swipe them
+                    away one by one, creating
+                    friction that interrupts
+                    autopilot mode</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="subheading">Sketches</h2>
+    <p class="paragraph">I created some sketches of the interventions. This would allow us to see what they would
+        look like while in use.</p>
+    <div class="sketch-grid">
+
+        <!-- Break -->
+        <article class="sketch-row">
+            <div class="sketch-text">
+                <h3>Break</h3>
+                <p>
+                    This sketch explores a timed screen lock designed to create a forced pause
+                    and encourage rest before returning to the app.
+                </p>
+            </div>
+
+            <div class="sketch-image">
+                <img src="../images/Screenshot 2026-01-01 154109.png" alt="Break intervention initial sketch">
+            </div>
+        </article>
+
+        <!-- Deter -->
+        <article class="sketch-row">
+            <div class="sketch-text">
+                <h3>Deter</h3>
+                <p>
+                    This concept introduces a puzzle-based roadblock that requires active
+                    engagement before the user can continue scrolling.
+                </p>
+            </div>
+
+            <div class="sketch-image">
+                <img src="../images/Screenshot 2026-01-01 154213.png" alt="Deter intervention initial sketch">
+            </div>
+        </article>
+
+        <!-- Notify -->
+        <article class="sketch-row">
+            <div class="sketch-text">
+                <h3>Notify</h3>
+                <p>
+                    Layered reminders were sketched to create friction by requiring repeated
+                    dismissal, interrupting autopilot behavior.
+                </p>
+            </div>
+
+            <div class="sketch-image">
+                <img src="../images/Screenshot 2026-01-01 154019.png" alt="Notify intervention initial sketch">
+            </div>
+        </article>
+        <hr>
+        <h1 class="section-heading">Initial Prototype and Testing</h1>
+        <p class="paragraph">As we moved forward in bringing our idea to life, the next step was to create a functional,
+            low fidelity prototype that we would show during the user testing. </p>
+        <h2 class="subheading">Low Fidelity Prototype</h2>
+
+        <p class="paragraph">We were still unsure of what direction to take the theme in, so to start we kept the color
+            scheme simple monochromatic blue.</p>
+        <h2 class="subheading">Testing</h2>
+        <p class="paragraph">After creating the prototype, we wanted to get insight on the usability of it. To do so, we
+            gave our participants 3 tasks, and had them attempt to complete said tasks. </p>
+        <h2 class="sub-sub-heading">Tasks</h2>
+        <section class="tasks">
+            <div class="task-card">
+                <h3>Task 1</h3>
+                <p>
+                    You have just downloaded the app for the first time. Take the quiz to find the perfect intervention
+                    method for you and explore other options.
+                </p>
+            </div>
+
+            <div class="task-card">
+                <h3>Task 2</h3>
+                <p>
+                    You have chosen your desired method. From there, customize your interval lengths. Afterwareds,
+                    implement and try out your method.
+                </p>
+            </div>
+
+            <div class="task-card">
+                <h3>Task 3</h3>
+                <p>
+                    You decide that this is not the method for you. Try to change the intervention.
+                </p>
+            </div>
+        </section>
+        <h2 class="sub-sub-heading">Insights</h2>
+        <section class="ux-insights" aria-labelledby="insights-title">
+            <header class="ux-insights__header">
+                <h2 id="insights-title" class="ux-insights__title">Key UX Research Insights</h2>
+                <p class="ux-insights__subtitle">
+                    Summary of participant feedback from usability testing.
+                </p>
+            </header>
+
+            <div class="ux-insights__grid">
+                <!-- Insight 1 -->
+                <article class="insight-card">
+                    <div class="insight-card__top">
+                        <span class="insight-card__tag">Visual Design</span>
+                        <span class="insight-card__num" aria-hidden="true">01</span>
+                    </div>
+
+                    <h3 class="insight-card__title">Visual design did not reinforce the concept</h3>
+                    <p class="insight-card__text">
+                        Participants described the color scheme as unengaging and felt it didn’t align with the app’s
+                        intended concept.
+                    </p>
+
+                    <ul class="insight-card__bullets" aria-label="Evidence">
+                        <li>Users called the look “boring”</li>
+                        <li>Lacked visual cues that communicated purpose/personality</li>
+                    </ul>
+                </article>
+
+                <!-- Insight 2 -->
+                <article class="insight-card">
+                    <div class="insight-card__top">
+                        <span class="insight-card__tag">Navigation</span>
+                        <span class="insight-card__num" aria-hidden="true">02</span>
+                    </div>
+
+                    <h3 class="insight-card__title">No navigation bar caused disorientation</h3>
+                    <p class="insight-card__text">
+                        Without a navigation bar, users were unsure where to go next or how to move between sections.
+                    </p>
+
+                    <ul class="insight-card__bullets" aria-label="Evidence">
+                        <li>Users didn’t know where they were in the interface</li>
+                        <li>No clear way to switch sections or return</li>
+                    </ul>
+                </article>
+
+                <!-- Insight 3 -->
+                <article class="insight-card">
+                    <div class="insight-card__top">
+                        <span class="insight-card__tag">Discoverability</span>
+                        <span class="insight-card__num" aria-hidden="true">03</span>
+                    </div>
+
+                    <h3 class="insight-card__title">Scrolling reduced discoverability of methods</h3>
+                    <p class="insight-card__text">
+                        Users disliked needing to scroll to see every intervention method, and some missed options below
+                        the fold.
+                    </p>
+
+                    <ul class="insight-card__bullets" aria-label="Evidence">
+                        <li>Important content wasn’t immediately visible</li>
+                        <li>Some users didn’t realize more methods existed</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <hr>
+        <h1 class="section-heading">Final Prototype</h1>
+        <h2 class="subheading">Changes</h2>
+        <div class="phone">
+            <img src="../images/Screenshot 2026-01-08 102308.png" alt="">
+        </div>
+        <p class="paragraph">We changed the color scheme and theme of the app to match our concept better
+            and we also added context for our quiz so the user wouldn’t be confused about the
+            purpose of the quiz.</p>
+        <div class="phone">
+            <img src="../images/Screenshot 2026-01-08 102323.png" alt="">
+        </div>
+        <p class="paragraph">Added a navigation bar at the bottom of the app and created a feature that
+            notified users that they were enabling the method.</p>
+        <div class="phone">
+            <img src="../images/Screenshot 2026-01-08 102336.png" alt="">
+        </div>
+        <p class="paragraph">Initially we had the user scroll through each method after the quiz- but then we
+            realized that users wouldn’t have a page to watch all the methods at once- so
+            we decided to cut that feature and create a separate page where users can click
+            through each method.</p>
+
+        <h1 class="subheading">Final Prototype Preview</h1>
+        <a href="https://www.figma.com/proto/uKj6TTDVCEX6U1LDSowlm8/Doomscrolling?node-id=0-1&t=Ixl2O6fkstcjeesq-1" class="center-link">Link to Prototype</a>
+        <div class="gallery">
+            <div class="gallery-track">
+                <div class="gallery-item active">
+                    <img src="../images/Screenshot 2026-01-09 133727.png" alt="Gallery image 1">
+                    <div class="gallery-caption">Landing page and quiz</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Screenshot 2026-01-09 133739.png" alt="Gallery image 2">
+                    <div class="gallery-caption">Complete the mini quiz and get a recommended method.</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Screenshot 2026-01-09 133859.png" alt="Gallery image 3">
+                    <div class="gallery-caption">Page where users can review and change methods.</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Screenshot 2026-01-09 133917.png" alt="Gallery image 3">
+                    <div class="gallery-caption">Change scroll/ break intervals and implement method. EX: Deter</div>
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="../images/Screenshot 2026-01-09 133949.png" alt="Gallery image 3">
+                    <div class="gallery-caption">Deter method in use.</div>
+                </div>
+            </div>
+
+            <button class="gallery-nav prev">&#10094;</button>
+            <button class="gallery-nav next">&#10095;</button>
+        </div>
+
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+        <footer>
+            <div class="footer-container">
+                <p class="footer-name">© 2025 Y. Li — Portfolio Case Study</p>
+                <div class="footer-links">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/about.html">About</a>
+                    <a href="../html/contact.html">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+        <script>
+            const galleryItems = document.querySelectorAll(".gallery-item");
+            const prevBtn = document.querySelector(".gallery-nav.prev");
+            const nextBtn = document.querySelector(".gallery-nav.next");
+
+            let currentIndex = 0;
+
+            function showGalleryItem(index) {
+                galleryItems.forEach(item => item.classList.remove("active"));
+                galleryItems[index].classList.add("active");
+            }
+
+            nextBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % galleryItems.length;
+                showGalleryItem(currentIndex);
+            });
+
+            prevBtn.addEventListener("click", () => {
+                currentIndex =
+                    (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+                showGalleryItem(currentIndex);
+            });
+        </script>
+
+
+</body>
+
+</html>
