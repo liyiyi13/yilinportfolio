@@ -1,0 +1,493 @@
+/* ——— GENERAL STYLING ——— */
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  margin-left: 7rem;
+
+}
+
+/* ——— HEADER ——— */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  border-bottom: 1px solid #eee;
+  background-color: #f6eaec;
+}
+
+.logo {
+  color: #F2778D;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ——— NAVIGATION ——— */
+nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #F2055C;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: linear-gradient(90deg, #F24130, #F28B30, #F2778D);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #F28B30;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ——— INTRO SECTION ——— */
+.intro {
+  background-color: #fff;
+  padding: 80px 100px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-size: 12rem;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(90deg, #F24130 0%, #F28B30 25%, #F2778D 55%, #F2055C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px;
+}
+
+.intro h2 {
+  font-size: 3.5rem;
+  color: #F2055C;
+  font-weight: 500;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.intro h3 {
+  font-size: 1.5rem;
+  color: #666;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* ——— PROJECT GRID ——— */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 8rem;
+  padding: 0 2rem;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.case-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.box h3 {
+  font-size: 2.5rem;
+  color: #F2055C;
+  margin-bottom: 1rem;
+}
+
+.box p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+/* ——— FOOTER (OPTIONAL) ——— */
+footer {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+.role {
+  color: #F2778D;
+  /* or any accent color you want */
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.box {
+  text-decoration: none;
+  /* removes blue underline */
+  color: inherit;
+  /* keeps your text color consistent */
+  display: block;
+}
+
+/* ——— CASE STUDY PAGE ——— */
+.case {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 5rem 10%;
+  background-color: #fff;
+}
+
+.case-info,
+.example {
+  max-width: 50%;
+}
+
+.case-info h1 {
+  font-size: 5rem;
+  background: linear-gradient(90deg, #F24130, #F28B30, #F2778D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.case-info h3 {
+  font-size: 2rem;
+  color: #F2055C;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.case-info h4 {
+  font-size: 1.4rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.case-info-img {
+  width: 45%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ——— CASE STUDY CONTENT SECTIONS ——— */
+.section {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.section h2 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #F24130, #F28B30, #F2778D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Optional: for clean dividers between sections */
+.section-divider {
+  width: 60%;
+  height: 1px;
+  background-color: #eee;
+  margin: 4rem auto;
+}
+
+
+hr {
+  width: 70%;
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+  margin: 10rem;
+  gap: 6rem;
+  font-size: 1.5rem;
+  font-weight: light;
+}
+
+.subheading {
+  background: linear-gradient(90deg, #F24130 0%, #F28B30 25%, #F2778D 55%, #F2055C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.goal-subheading {
+  background: linear-gradient(90deg, #F24130 0%, #F28B30 25%, #F2778D 55%, #F2055C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 5rem;
+}
+
+.problem {
+  color: #474747;
+  width: 2000px;
+}
+
+/*headings*/
+
+.section-heading {
+  padding-top: 2rem;
+  background: linear-gradient(90deg, #F24130 0%, #F28B30 25%, #F2778D 55%, #F2055C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 0;
+
+}
+
+.sub-sub-heading {
+  margin: 0;
+  padding: 0;
+  color: #F2778D;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 85%;
+  text-align: center;
+}
+
+.page_p{
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 85%;
+  text-align: center;
+  padding-left: 3rem;
+}
+
+.page_box {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;      /* this creates spacing between the two boxes */
+  margin-top: 1.5rem;
+  padding-left:5rem;
+  margin-bottom: 5rem;
+}
+
+.page {
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  margin-top: 3rem;
+  flex: 1;        /* makes both boxes equal width */
+
+}
+
+.page ul li {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centers everything */
+}
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    padding: 2rem 3rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-links a {
+    margin: 0 0.7rem;
+    color: #F2055C;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #004b88;
+    text-decoration: underline;
+}
+
+.back-to-top {
+    font-style: italic;
+    color: #444;
+}
+
+.image-layout {
+    display: flex;
+    gap: 1rem;          /* space between images */
+    align-items: center; /* vertically align if needed */
+    padding-left: 12rem;
+    padding-bottom: 4rem;
+}
+
+.image-layout img {
+    height: 300px;      /* or any height you want */
+    object-fit: cover;  /* crops the image to fit the fixed height */
+    border-radius: 8px; /* optional */
+}
+
+.muted {
+  font-size: 1.5rem;
+  padding-left: 7.5rem;
+}
+
+/*lists*/
+.styled-list {
+    list-style: none;          /* removes default bullets */
+    font-size: 1.5rem;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;            /* centers the container */
+    text-align: center;        /* centers text & custom bullets */
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin: 2rem auto;
+    max-width: 900px; /* centers + keeps readable line length */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center; /* vertically centers box to text */
+    gap: 1rem;
+}
+
+.feature-tag {
+    background-color: #f6c1d1;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.45rem 0.8rem;
+    border-radius: 6px;
+    line-height: 1.2; /* keeps box snug */
+    height: 3rem; /* box matches text height */
+    align-self: center;
+    white-space: nowrap;
+}
+a {
+    color: #e88bb0; /* soft pink */
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #F2055C;
+}
+
+.sketch-img-box {
+    display: flex;
+    flex-wrap: wrap;        /* allows images to move to next line */
+    gap: 1rem;
+    justify-content: center;
+    max-width: 100%;        /* prevents overflow */
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
+.sketch-img {
+    max-width: 100%;
+    width: 300px;           /* set preferred size */
+    height: auto;           /* prevents stretching */
+    border-radius: 10px;
+}
+
+
+.center-link {
+      display: block;
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.feature-item p {
+    margin: 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+
+.styled-list li {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.styled-list li::before {
+    content: "•  ";             /* custom centered bullet */
+    display: inline-block;
+}
+
+.obs-text{
+  padding-left: 6rem;
+}
